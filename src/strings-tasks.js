@@ -198,7 +198,7 @@ function sumOfCodes(str) {
 
   const arrayOfSymbols = str.split('');
 
-  return arrayOfSymbols.reduce(function (sum, char) {
+  return arrayOfSymbols.reduce(function calculateSumOfCodes(sum, char) {
     return sum + char.charCodeAt(0);
   }, 0);
 }
